@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG + D3</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <style type="text/css">
+            body {
+                text-align:center;
+                overflow-y: hidden;
+                font-family: "Lucida Grande";
+                color: white;
+            }
+            svg {
+                background: #000000;
+                margin: 0px 0 0 0px;
+                padding: 0px;
+            }
+            #Rural {
+                position:fixed;
+                left:10px;
+                top:165px;
+                height:100%;
+                font-size: 12px;
+            }
+            #Urban {
+                position:fixed;
+                left:10px;
+                top:330px;
+                height:100%;
+                font-size: 12px;
+            }
+            #Total {
+                position:fixed;
+                left:10px;
+                top:500px;
+                height:100%;
+                font-size: 12px;
+            }
+            #Title {
+                position:fixed;
+                left:40%;
+                top:50px;
+                height:100%;
+                font-size: 18px;
+            }
+             #StartYear {
+                position:absolute;
+                left:130px;
+                top:615px;
+                height:100%;
+                font-size: 12px;
+            }
+            #EndYear {
+                position:absolute;
+                left:5075px;
+                top:615px;
+                height:100%;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Rural">
+            Rural
+        </div>
+        <div id="Urban">
+            Urban
+        </div>
+        <div id="Total">
+            Total
+        </div>
+         <div id="StartYear">
+            1990
+        </div>
+         <div id="EndYear">
+            2016
+        </div>
+        <div id="Title">
+            Access to Electricity in South Africa
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        
+    </body>
+</html>
