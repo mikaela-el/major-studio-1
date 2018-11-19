@@ -1,6 +1,6 @@
 // load data set  
 //const data = d3.json("datatest.json");
-const data = d3.json("undpdatanew.json");
+const data = d3.json("newdata2.json");
     
 data.then( items => {
                 console.log(items);
@@ -33,15 +33,28 @@ let svg = (items) => {
 // append an svg element to Country div 
     let header = d3.select('head')
         .append('svg')
-        .attr('width', 1000)
+        .attr('width', 800)
         .attr('height', 200);
        
 // append an svg element to Country div 
     let box = d3.select('#country')
         .append('svg')
         .attr('width', 800)
-        .attr('height', window.innerHeight*30);
+        .attr('height', window.innerHeight*36.5);
 
+// append data to svg, then append a rectangle (bar) for Male Expected Education 
+    let sentenceOne = box.selectAll('text.s')
+       .data(items)
+       .enter()
+       .append('text')
+       .attr('class', 's');
+
+// append data to svg, then append a rectangle (bar) for Male Expected Education 
+    let sentenceTwo = box.selectAll('text.b')
+       .data(items)
+       .enter()
+       .append('text')
+        .attr('class', 'b');
 
 // append data to svg, then append a rectangle (bar) for Female Mean Education 
     let rectFemaleMean = box.selectAll('rect.f')
@@ -82,130 +95,140 @@ let svg = (items) => {
     let colorScale = d3.scaleLinear()
         .domain([0, 100])
         .range(["Red", "Orange"])
-
+        
     // Center Line 
     box.append("line")
           .attr("x1", 400)
           .attr("x2", 400)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke", 'E2E1E0');
     
     // Male 4 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400-scale(4); } )
-          .attr("x2", (d,i) => { return 400-scale(4); } )
+          .attr("x1", (d,i) => { return 310; } )
+          .attr("x2", (d,i) => { return 310; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
     // Female 4 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400+scale(4); } )
-          .attr("x2", (d,i) => { return 400+scale(4); } )
+          .attr("x1", (d,i) => { return 490; } )
+          .attr("x2", (d,i) => { return 490; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
      // Male 8 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400-scale(8); } )
-          .attr("x2", (d,i) => { return 400-scale(8); } )
+          .attr("x1", (d,i) => { return 220; } )
+          .attr("x2", (d,i) => { return 220; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
      // Female 8 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400+scale(8); } )
-          .attr("x2", (d,i) => { return 400+scale(8); } )
+          .attr("x1", (d,i) => { return 580; } )
+          .attr("x2", (d,i) => { return 580; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
 
     // Male 12 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400-scale(12); } )
-          .attr("x2", (d,i) => { return 400-scale(12); } )
+          .attr("x1", (d,i) => { return 130; } )
+          .attr("x2", (d,i) => { return 130; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
     // Female 12 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400+scale(12); } )
-          .attr("x2", (d,i) => { return 400+scale(12); } )
+          .attr("x1", (d,i) => { return 670; } )
+          .attr("x2", (d,i) => { return 670; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
     // Male 16 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400-scale(16); } )
-          .attr("x2", (d,i) => { return 400-scale(16); } )
+          .attr("x1", (d,i) => { return 40; } )
+          .attr("x2", (d,i) => { return 40; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
      // Female 16 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 400+scale(16); } )
-          .attr("x2", (d,i) => { return 400+scale(16); } )
+          .attr("x1", (d,i) => { return 760; } )
+          .attr("x2", (d,i) => { return 760; } )
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*30)
+          .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
 
 
-//   // style the country name above each bar 
-//   Country.attr('x', (elec, i) => { return 140 + 190*i; }) // puts the circle in one row vertically 
-//         .attr('y', 220)
-//         .attr("text-anchor", "middle")
-//         .style("font-size", "8px") 
-//         .style('fill', 'white')
-//         .text((elec) => { return elec.toFixed(1) + "%"; })
-
-
+// style the text for the sentence 
+    sentenceOne.attr('x', 400)
+        .attr('y', (items, i) => { return 500 + 400*i; })
+        .attr("text-anchor", "middle")
+        .style("font-size", "15px") 
+        .style('fill', 'black')
+        .text((d,i) => { return "In" + " " + (items[i].Country) + "," +  " " + (items[i].RuralElec) 
+        + "% of the rural population has access to electricity."; });
+        
+// style the text for the sentence 
+    sentenceTwo.attr('x', 400)
+        .attr('y', (items, i) => { return 550 + 400*i; })
+        .attr("text-anchor", "middle")
+        .style("font-size", "15px") 
+        .style('fill', 'black')
+        .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
+        + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean) + " " + "years."; });
+        
+        
  // style the bars (=rectangles) Female Mean Education 
     rectFemaleMean.attr('width', (d,i) => { return scale(items[i].FemaleMean); })
-        .attr('height', 30)
+        .attr('height', 45)
         .attr('x', 400)
-        .attr('y', (items, i) => { return 70 + 300*i; })
+        .attr('y', (items, i) => { return 360 + 400*i; })
         .attr('fill', '#f5c250')
-        .attr('id', (d) => { return d.Country; });
+        .attr('id', (d) => { return d.Country+"_fem_mean"; });
 
  // style the bars (=rectangles) Female Expected Education 
     rectFemaleExpect.attr('width', (d,i) => { return scale(items[i].FemaleExpect); })
-        .attr('height', 30)
+        .attr('height', 45)
         .attr('x', 400)
-        .attr('y', (items, i) => { return 70 + 300*i; })
+        .attr('y', (items, i) => { return 360 + 400*i; })
         .attr('fill', '#f5c250')
         .attr("fill-opacity", 0.5)
-        .attr('id', (d) => { return d.Country; });
+        .attr('id', (d) => { return d.Country+"_fem_exp"; });
 
  // style the bars (=rectangles) Male Mean Education 
     rectMaleMean.attr('width', (d,i) => { return scale(items[i].MaleMean); })
-        .attr('height', 30)
+        .attr('height', 45)
         .attr('x', (d,i) => { return 400-scale(items[i].MaleMean); })
-        .attr('y', (items, i) => { return 70 + 300*i; })
+        .attr('y', (items, i) => { return 360 + 400*i; })
         .attr('fill', '#f5c250')
-        .attr('id', (d) => { return d.Country; });
+        .attr('id', (d) => { return d.Country+"_mal_mean"; });
         
  // style the bars (=rectangles) Male Expected Education 
     rectMaleExpect.attr('width', (d,i) => { return scale(items[i].MaleExpect); })
-        .attr('height', 30)
+        .attr('height', 45)
         .attr('x', (d,i) => { return 400-scale(items[i].MaleExpect); })
-        .attr('y', (items, i) => { return 70 + 300*i; })
+        .attr('y', (items, i) => { return 360 + 400*i; })
         .attr('fill', '#f5c250')
         .attr("fill-opacity", 0.5)
-        .attr('id', (d) => { return d.Country; });
+        .attr('id', (d) => { return d.Country+"_mal_exp"; });
 
 
 // Countries to list for Country div   
@@ -213,14 +236,14 @@ let svg = (items) => {
       d3.select('#country')
         .append('p')
         .attr('id', (d.Country))
-        .attr('class', "ui")
-        .text(d.Country + "  " + d.RuralElec + "%")
+        .html("<div class='country_anchor' id='" + d.Country + "'></div><div class='country_title'>" + d.Country + "</div><div class='country_percent'>" + d.RuralElec + "%</div>")
         .style('color', "black")
+        .style('text-transform', 'uppercase')
         .style('position', 'absolute')
-        .style('top', 30 + i*300 + 'px')
-        .style('left', 50 + '%')
-        
-
+        .style('z-index', '1')
+        .style('top', 45 + i*400 + 'px')
+        .style('font-size', '6px')
+        .style('font-weight', '400');
     });
     
 
@@ -243,20 +266,26 @@ let svg = (items) => {
     let region = "";
     
    
-    
     let entry = cont
         .append('p')
         .html(function(d, i) { 
              // Labels for Regions in the Index 
+                let display_label = '<a href="#' + d.Country + '">' + d.RuralElec + "%" +  '     ' + d.Country + '</a>';
+                
                 if (d.Region != region) { 
                     console.log(d.Region)
                     //d3.append('h3 Country.Region')
                     region = d.Region
                     //entry.append('h3')
                     //.text(d.Region)
-                    return "<h3>" + d.Region + "</h3>" + d.RuralElec + "%" +  '     ' + d.Country
+                    return display_label + "<h3 style='position: relative; bottom: 20px'>" + d.Region + "</h3>" 
                 } else {
-                    return d.RuralElec + "%" +  '     ' + d.Country
+                    let end_countries = ['Burkina Faso', 'Lesotho', 'South Sudan', 'Burundi']
+                    let space = '';
+                    if(end_countries.includes(d.Country)) {
+                        space = '<br><br><br><br><br><br><br><br>';
+                    }
+                    return display_label + space
                 }
             })
             
@@ -265,26 +294,10 @@ let svg = (items) => {
                 return "black";
             }
         });
-        
-        
-    
-    //  items.forEach( (d, i) => {
-    //                 d3.select('#index')
-    //                     .append('div')
-    //                     .append('svg')
-    //                     .append('p')
-    //                     .text( d.RuralElec + "%" +  '     ' + d.Country)
-    //                     .style('color', () => { 
-    //                         if (d.Country == "Burundi") {
-    //                             return "pink";
-    //                         }
-    //                     }
-    //                 )
-    //         });
     
     // style the bars (=rectangles) Access to electricity 
     rectElec.attr('width', (d,i) => { return scaleElec(items[i].RuralElec); })
-        .attr('height', 7)
+        .attr('height', 6)
         //.attr('x', (d,i) => { return (items[i].RuralElec); })
         .attr('x', 20)
         .attr('y', (items, i) => { return 0; })
@@ -293,12 +306,6 @@ let svg = (items) => {
 
 }
 
-// // append data to svg, then append a rectangle (bar) for Access to Electricty  
-//     let rectElec = box.selectAll('rect.a')
-//       .data(items)
-//       .enter()
-//       .append('rect')
-//       .attr('class', 'a');
 
 
 

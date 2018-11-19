@@ -1,0 +1,542 @@
+[
+  {
+    "Country": "Egypt",
+    "Region": "Northern",
+    "FemaleMean": 6.5,
+    "MaleMean": 7.9,
+    "FemaleExpect": 13.1,
+    "MaleExpect": 13.1,
+    "RuralElec": 100,
+    "DiffMean": 1.4
+  },
+  {
+    "Country": "Mauritius",
+    "Region": "Eastern",
+    "FemaleMean": 9.1,
+    "MaleMean": 9.5,
+    "FemaleExpect": 15.5,
+    "MaleExpect": 14.6,
+    "RuralElec": 100,
+    "DiffMean": 0.4
+  },
+  {
+    "Country": "Morroco",
+    "Region": "Northern",
+    "FemaleMean": 4.2,
+    "MaleMean": 6.4,
+    "FemaleExpect": 12,
+    "MaleExpect": 12.8,
+    "RuralElec": 100,
+    "DiffMean": 2.2
+  },
+  {
+    "Country": "Seychelles",
+    "Region": "Eastern",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": 15.1,
+    "MaleExpect": 14.3,
+    "RuralElec": 100,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Tunisia",
+    "Region": "Northern",
+    "FemaleMean": 6.3,
+    "MaleMean": 7.9,
+    "FemaleExpect": 15.8,
+    "MaleExpect": 14.4,
+    "RuralElec": 100,
+    "DiffMean": 1.6
+  },
+  {
+    "Country": "Algeria",
+    "Region": "Northern",
+    "FemaleMean": 7.6,
+    "MaleMean": 8.6,
+    "FemaleExpect": 14.6,
+    "MaleExpect": 14.1,
+    "RuralElec": 98.9,
+    "DiffMean": 1
+  },
+  {
+    "Country": "Libya",
+    "Region": "Northern",
+    "FemaleMean": 7.7,
+    "MaleMean": 7,
+    "FemaleExpect": 13.6,
+    "MaleExpect": 13.2,
+    "RuralElec": 96.4,
+    "DiffMean": -0.7
+  },
+  {
+    "Country": "Cape Verde",
+    "Region": "Western",
+    "FemaleMean": 5.9,
+    "MaleMean": 6.4,
+    "FemaleExpect": 12.8,
+    "MaleExpect": 12.1,
+    "RuralElec": 91.8,
+    "DiffMean": 0.5
+  },
+  {
+    "Country": "Comoros",
+    "Region": "Eastern",
+    "FemaleMean": 3.7,
+    "MaleMean": 5.6,
+    "FemaleExpect": 11,
+    "MaleExpect": 11.2,
+    "RuralElec": 72.2,
+    "DiffMean": 1.9
+  },
+  {
+    "Country": "South Africa",
+    "Region": "Southern",
+    "FemaleMean": 9.9,
+    "MaleMean": 10.4,
+    "FemaleExpect": 13.7,
+    "MaleExpect": 13.1,
+    "RuralElec": 67.9,
+    "DiffMean": 0.5
+  },
+  {
+    "Country": "Ghana",
+    "Region": "Western",
+    "FemaleMean": 6.3,
+    "MaleMean": 7.9,
+    "FemaleExpect": 11.4,
+    "MaleExpect": 11.8,
+    "RuralElec": 66.6,
+    "DiffMean": 1.6
+  },
+  {
+    "Country": "Eswatini",
+    "Region": "Southern",
+    "FemaleMean": 6.1,
+    "MaleMean": 6.9,
+    "FemaleExpect": 10.8,
+    "MaleExpect": 11.6,
+    "RuralElec": 61.2,
+    "DiffMean": 0.8
+  },
+  {
+    "Country": "Gabon",
+    "Region": "Central",
+    "FemaleMean": 7.4,
+    "MaleMean": 9.1,
+    "FemaleExpect": 12.5,
+    "MaleExpect": 13.4,
+    "RuralElec": 54.9,
+    "DiffMean": 1.7
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "Region": "Central",
+    "FemaleMean": 4,
+    "MaleMean": 7.3,
+    "FemaleExpect": "",
+    "MaleExpect": "",
+    "RuralElec": 52.5,
+    "DiffMean": 3.3
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "Region": "Central",
+    "FemaleMean": 5.3,
+    "MaleMean": 6.7,
+    "FemaleExpect": 12.6,
+    "MaleExpect": 12.4,
+    "RuralElec": 51.1,
+    "DiffMean": 1.4
+  },
+  {
+    "Country": "Nigeria",
+    "Region": "Western",
+    "FemaleMean": 5,
+    "MaleMean": 7.3,
+    "FemaleExpect": 9.2,
+    "MaleExpect": 10.8,
+    "RuralElec": 41.1,
+    "DiffMean": 2.3
+  },
+  {
+    "Country": "Kenya",
+    "Region": "Eastern",
+    "FemaleMean": 5.6,
+    "MaleMean": 7.1,
+    "FemaleExpect": 11.5,
+    "MaleExpect": 12.3,
+    "RuralElec": 39.3,
+    "DiffMean": 1.5
+  },
+  {
+    "Country": "Eritrea",
+    "Region": "Eastern",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": 4.9,
+    "MaleExpect": 5.8,
+    "RuralElec": 39.2,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Senegal",
+    "Region": "Western",
+    "FemaleMean": 2.4,
+    "MaleMean": 3.8,
+    "FemaleExpect": 9.8,
+    "MaleExpect": 9.2,
+    "RuralElec": 38.3,
+    "DiffMean": 1.4
+  },
+  {
+    "Country": "Cote d'Ivoire",
+    "Region": "Western",
+    "FemaleMean": 4,
+    "MaleMean": 6.2,
+    "FemaleExpect": 8.1,
+    "MaleExpect": 10,
+    "RuralElec": 38.1,
+    "DiffMean": 2.2
+  },
+  {
+    "Country": "Botswana",
+    "Region": "Southern",
+    "FemaleMean": 9.3,
+    "MaleMean": 9.5,
+    "FemaleExpect": 12.8,
+    "MaleExpect": 12.5,
+    "RuralElec": 37.4,
+    "DiffMean": 0.2
+  },
+  {
+    "Country": "Namibia",
+    "Region": "Southern",
+    "FemaleMean": 7.1,
+    "MaleMean": 6.5,
+    "FemaleExpect": 12.4,
+    "MaleExpect": 12.2,
+    "RuralElec": 28.7,
+    "DiffMean": -0.6
+  },
+  {
+    "Country": "Ethiopia",
+    "Region": "Eastern",
+    "FemaleMean": 1.6,
+    "MaleMean": 3.8,
+    "FemaleExpect": 8.2,
+    "MaleExpect": 9.1,
+    "RuralElec": 26.5,
+    "DiffMean": 2.2
+  },
+  {
+    "Country": "Republic of the Congo",
+    "Region": "Central",
+    "FemaleMean": 5.5,
+    "MaleMean": 6.7,
+    "FemaleExpect": 11,
+    "MaleExpect": 11.3,
+    "RuralElec": 22.6,
+    "DiffMean": 1.2
+  },
+  {
+    "Country": "Sudan",
+    "Region": "Northern",
+    "FemaleMean": 3.1,
+    "MaleMean": 4.1,
+    "FemaleExpect": 7.2,
+    "MaleExpect": 7.7,
+    "RuralElec": 22.2,
+    "DiffMean": 1
+  },
+  {
+    "Country": "Cameroon",
+    "Region": "Central",
+    "FemaleMean": 4.7,
+    "MaleMean": 7.6,
+    "FemaleExpect": 11,
+    "MaleExpect": 12.6,
+    "RuralElec": 21.3,
+    "DiffMean": 2.9
+  },
+  {
+    "Country": "Togo",
+    "Region": "Western",
+    "FemaleMean": 3.3,
+    "MaleMean": 6.5,
+    "FemaleExpect": 10,
+    "MaleExpect": 13.2,
+    "RuralElec": 19.3,
+    "DiffMean": 3.2
+  },
+  {
+    "Country": "Uganda",
+    "Region": "Eastern",
+    "FemaleMean": 4.5,
+    "MaleMean": 6.9,
+    "FemaleExpect": 11,
+    "MaleExpect": 12.2,
+    "RuralElec": 18,
+    "DiffMean": 2.4
+  },
+  {
+    "Country": "Benin",
+    "Region": "Western",
+    "FemaleMean": 3,
+    "MaleMean": 4.3,
+    "FemaleExpect": 11.9,
+    "MaleExpect": 14.2,
+    "RuralElec": 17.9,
+    "DiffMean": 1.3
+  },
+  {
+    "Country": "Rwanda",
+    "Region": "Eastern",
+    "FemaleMean": 3.7,
+    "MaleMean": 4.7,
+    "FemaleExpect": 11.2,
+    "MaleExpect": 11.2,
+    "RuralElec": 17.76,
+    "DiffMean": 1
+  },
+  {
+    "Country": "Madagascar",
+    "Region": "Eastern",
+    "FemaleMean": 6.7,
+    "MaleMean": 6.1,
+    "FemaleExpect": 10.5,
+    "MaleExpect": 10.6,
+    "RuralElec": 17.3,
+    "DiffMean": -0.6
+  },
+  {
+    "Country": "Tanzania",
+    "Region": "Eastern",
+    "FemaleMean": 5.4,
+    "MaleMean": 6.2,
+    "FemaleExpect": 8.6,
+    "MaleExpect": 9.3,
+    "RuralElec": 16.9,
+    "DiffMean": 0.8
+  },
+  {
+    "Country": "Angola",
+    "Region": "Central",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": 11,
+    "MaleExpect": 12.7,
+    "RuralElec": 15.9,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Lesotho",
+    "Region": "Southern",
+    "FemaleMean": 7,
+    "MaleMean": 5.5,
+    "FemaleExpect": 11,
+    "MaleExpect": 10.2,
+    "RuralElec": 15.7,
+    "DiffMean": -1.5
+  },
+  {
+    "Country": "Gambia",
+    "Region": "Western",
+    "FemaleMean": 2.6,
+    "MaleMean": 4.2,
+    "FemaleExpect": 9.3,
+    "MaleExpect": 9.2,
+    "RuralElec": 15.5,
+    "DiffMean": 1.6
+  },
+  {
+    "Country": "Zimbabwe",
+    "Region": "Eastern",
+    "FemaleMean": 7.5,
+    "MaleMean": 8.9,
+    "FemaleExpect": 10.2,
+    "MaleExpect": 10.5,
+    "RuralElec": 15.5,
+    "DiffMean": 1.4
+  },
+  {
+    "Country": "Somalia",
+    "Region": "Eastern",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": "",
+    "MaleExpect": "",
+    "RuralElec": 11.6,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Guinea",
+    "Region": "Western",
+    "FemaleMean": 1.5,
+    "MaleMean": 3.9,
+    "FemaleExpect": 7.8,
+    "MaleExpect": 10.4,
+    "RuralElec": 6.9,
+    "DiffMean": 2.4
+  },
+  {
+    "Country": "South Sudan",
+    "Region": "Northern",
+    "FemaleMean": 4,
+    "MaleMean": 5.3,
+    "FemaleExpect": 3.8,
+    "MaleExpect": 6.3,
+    "RuralElec": 5.8,
+    "DiffMean": 1.3
+  },
+  {
+    "Country": "Mozambique",
+    "Region": "Eastern",
+    "FemaleMean": 2.5,
+    "MaleMean": 4.6,
+    "FemaleExpect": 9.2,
+    "MaleExpect": 10.2,
+    "RuralElec": 4.9,
+    "DiffMean": 2.1
+  },
+  {
+    "Country": "Niger",
+    "Region": "Western",
+    "FemaleMean": 1.4,
+    "MaleMean": 2.5,
+    "FemaleExpect": 4.7,
+    "MaleExpect": 6,
+    "RuralElec": 4.6,
+    "DiffMean": 1.1
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "Region": "Western",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": "",
+    "MaleExpect": "",
+    "RuralElec": 4,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Malawi",
+    "Region": "Eastern",
+    "FemaleMean": 4,
+    "MaleMean": 5.1,
+    "FemaleExpect": 10.9,
+    "MaleExpect": 10.8,
+    "RuralElec": 4,
+    "DiffMean": 1.1
+  },
+  {
+    "Country": "Zambia",
+    "Region": "Eastern",
+    "FemaleMean": 6.5,
+    "MaleMean": 7.4,
+    "FemaleExpect": 12,
+    "MaleExpect": 13,
+    "RuralElec": 2.6,
+    "DiffMean": 0.9
+  },
+  {
+    "Country": "Sierra Leone",
+    "Region": "Western",
+    "FemaleMean": 2.6,
+    "MaleMean": 4.2,
+    "FemaleExpect": 9.3,
+    "MaleExpect": 10.2,
+    "RuralElec": 2.5,
+    "DiffMean": 1.6
+  },
+  {
+    "Country": "Mauritania",
+    "Region": "Western",
+    "FemaleMean": 3.4,
+    "MaleMean": 5.4,
+    "FemaleExpect": 8.5,
+    "MaleExpect": 8.6,
+    "RuralElec": 2.3,
+    "DiffMean": 2
+  },
+  {
+    "Country": "Chad",
+    "Region": "Central",
+    "FemaleMean": 1.2,
+    "MaleMean": 3.4,
+    "FemaleExpect": 6.4,
+    "MaleExpect": 8.9,
+    "RuralElec": 2.2,
+    "DiffMean": 2.2
+  },
+  {
+    "Country": "Djibouti",
+    "Region": "Eastern",
+    "FemaleMean": "",
+    "MaleMean": "",
+    "FemaleExpect": 5.8,
+    "MaleExpect": 6.7,
+    "RuralElec": 2,
+    "DiffMean": 0
+  },
+  {
+    "Country": "Mali",
+    "Region": "Western",
+    "FemaleMean": 1.7,
+    "MaleMean": 3,
+    "FemaleExpect": 6.7,
+    "MaleExpect": 8,
+    "RuralElec": 1.7,
+    "DiffMean": 1.3
+  },
+  {
+    "Country": "Burundi",
+    "Region": "Eastern",
+    "FemaleMean": 2.7,
+    "MaleMean": 3.7,
+    "FemaleExpect": 11.3,
+    "MaleExpect": 12.1,
+    "RuralElec": 1.6,
+    "DiffMean": 1
+  },
+  {
+    "Country": "Liberia",
+    "Region": "Western",
+    "FemaleMean": 3,
+    "MaleMean": 6.1,
+    "FemaleExpect": 9.3,
+    "MaleExpect": 10.6,
+    "RuralElec": 1.3,
+    "DiffMean": 3.1
+  },
+  {
+    "Country": "Burkina Faso",
+    "Region": "Western",
+    "FemaleMean": 1,
+    "MaleMean": 2,
+    "FemaleExpect": 8.3,
+    "MaleExpect": 8.8,
+    "RuralElec": 0.7,
+    "DiffMean": 1
+  },
+  {
+    "Country": "Central African Republic",
+    "Region": "Central",
+    "FemaleMean": 3,
+    "MaleMean": 5.6,
+    "FemaleExpect": 5.9,
+    "MaleExpect": 8.5,
+    "RuralElec": 0.4,
+    "DiffMean": 2.6
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "Region": "Central",
+    "FemaleMean": 4.9,
+    "MaleMean": 8.3,
+    "FemaleExpect": 8.7,
+    "MaleExpect": 10.6,
+    "RuralElec": 0.4,
+    "DiffMean": 3.4
+  }
+]

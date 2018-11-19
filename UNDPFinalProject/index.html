@@ -10,307 +10,66 @@
         href="https://fonts.googleapis.com/css?family=Montserrat">
         <div id="header">
         </div>
-        <style type="text/css">
-            * {
-                padding:0;
-                margin:0;
-            }
-            body {
-                /*text-align:center;*/
-                background-color: #fbf2ec;
-            }
-            svg {
-                background: #fbf2ec;
-                /*margin: 10px 0 0 20px;*/
-            }
-            #titleLineOne {
-                position:absolute;
-                left:50%;
-                top:20px;
-                font-family: 'Montserrat', serif;
-                font-size: 15px;
-                text-align: center;
-                font-weight:250;
-            }
-            #titleLineTwo {
-                position:absolute;
-                left:50%;
-                top:45px;
-                font-family: 'Montserrat', serif;
-                font-size: 15px;
-                text-align: center;
-                font-weight:250;
-            }
-            #sentence {
-                position:absolute;
-                left:0%;
-                top:200px;
-                font-family: 'Montserrat', serif;
-                font-size: 15px;
-                text-align: center;
-                font-weight:600;
-            }
-            #sentenceTwo {
-                position:absolute;
-                left:26.5%;
-                top:240px;
-                font-family: 'Montserrat', serif;
-                font-size: 15px;
-                text-align: center;
-                font-weight:600;
-            }
-            #female {
-                position:fixed;
-                left:77.5%;
-                top:120px;
-                font-family: 'Avenir', serif;
-                font-size: 10px;
-                text-transform: uppercase;
-                font-weight:350;
-            }
-            #male {
-                position:fixed;
-                left:44%;
-                top:120px;
-                font-family: 'Avenir', serif;
-                font-size: 10px;
-                text-transform: uppercase;
-                font-weight:350;
-            }
-            #years {
-                position:fixed;
-                left:58%;
-                top:120px;
-                font-family: 'Avenir', serif;
-                font-size: 10px;
-                text-transform: uppercase;
-                font-weight:500;
-            
-            }
-            #average {
-                position:fixed;
-                left:55%;
-                top:98px;
-                font-family: 'Avenir', serif;
-                font-size: 8px;
-                text-transform: uppercase;
-                font-weight:350;
-            }
-            #expected {
-                position:fixed;
-                left:65%;
-                top:98px;
-                font-family: 'Avenir', serif;
-                font-size: 8px;
-                text-transform: uppercase;
-                font-weight:350;
-            }
-            #country {
-                position:absolute;
-                left:280px;
-                width:80%;
-                top:170px;
-                font-family: 'Avenir', serif;
-                font-size: 12px;
-            }
-            #index {
-                position:fixed;
-                left: 20px;
-                top: 90px;
-                font-family: 'Avenir', serif;
-                font-size: 5.5px;
-                
-            }
-            rect {
-                position:fixed;
-                left: 40px;
-                top: 20px;
-                margin-right: 40px;
-                
-            }
-            p {
-                font-size: 9.5px;
-                text-align: left;
-                line-height: 0.3;
-            }
-            #zero {
-                position:absolute;
-                left:42.5%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #malefour {
-                position:absolute;
-                left:53%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #Femalefour {
-                position:absolute;
-                left:32%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #maleEight {
-                position:absolute;
-                left:64%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #FemaleEight {
-                position:absolute;
-                left:21.5%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #maleTwelve {
-                position:absolute;
-                left:74.5%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #FemaleTwelve {
-                position:absolute;
-                left:10%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #maleSixteen {
-                position:absolute;
-                left:85%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #FemaleSixteen {
-                position:absolute;
-                left:0%;
-                top:15px;
-                height:100%;
-                font-size: 9px;
-                color: Gray;
-            }
-            #index svg {
-                left:50px;
-                width:50px;
-                height:9px;
-                display: inline;
-                margin:0;
-                
-            }
-            #index p {
-                display: inline;
-                margin:0;
-            }
-            .squareAverage {
-                position:fixed;
-                left:59%;
-                top:107px;
-                height: 9px;
-                width: 9px;
-                background-color: #F5C250;
-            }
-            .squareExpect {
-                position:fixed;
-                left:69%;
-                top:107px;
-                height: 9px;
-                width: 9px;
-                background-color: #f7d9a2;
-            }
+        <link rel="stylesheet" type="text/css" href="style.css">
         </style>
     </head>
+    
     <body>
-            <h1 id="titleLineOne"> 
-            Access to Electricity in Rural Africa 
-            </h1>
-            <h1 id="titleLineTwo"> 
-            & The Gender Gap in Education
-            </h1>
-            <div id="country">
-                <!--<div id="sentence">-->
-                <!--Females in Egypt are expected to go to school for 13 years however, will only receive an average of 6.5 years. -->
-                <!--</div>-->
-                <!--<div id="sentenceTwo">-->
-                <!--This is 1.5 years less than the average male. -->
-                <!--</div>-->
-                <h2 id="female">
-                Female
-                </h2>
-                <h2 id="male">
+        <div id="title">
+            <div id="main">
+                How Does <span class="orangeText">Electrification</span> in Rural Africa Affect Years of Schooling?
+                <div id="subtitle">
+                    When a rural household does not have access to electricity, they must rely on traditional fuel sources for domestic activities. According to the FAO, women bear the largest share of time and labor burdens associated with collecting fuel for domestic use. Although there are several factors that affect female years of schooling, household electrification has the ability to relieve time and labor burdens for rural women, allowing them to reallocate their time towards schooling. 
+                </div>
+            <p id="one">
+                1
+            </p>
+            </div>
+        </div>
+        <div id="header">
+             <div id="male">
                 Male
-                </h2>
-                <h2 id="years">
+            </div>
+             <div id="female">
+                Female
+            </div>
+            <div id="years">
                 Years of Education
-                </h2>
-                 <h3 id="average">
-                Average</h3> 
-                <h3 id="expected">
-                Expected</h3> 
-                <div class="squareAverage"></div>
-                <div class="squareExpect"></div>
-                <div id= "zero">
-                    0
-                </div>
-                <div id="malefour">
-                    4
-                </div>
-                 <div id="maleEight">
-                    8
-                </div>
-                <div id="maleTwelve">
-                    12
-                </div>
-                <div id="maleSixteen">
-                    16
-                </div>
-                <div id="Femalefour">
-                    4
-                </div>
-                <div id="FemaleEight">
-                    8
-                </div>
-                <div id="FemaleTwelve">
-                    12
-                </div>
-                <div id="FemaleSixteen">
-                    16
-                </div>
-               <!--<svg width="100%" height="600">-->
-               <!--    <g>-->
-               <!--      <rect x="55%" y="100" width="150" height="150"-->
-               <!--     style="fill:black";/>-->
-               <!--      <rect x="30%" y="100" width="150" height="150"-->
-               <!--     style="fill:red";/>-->
-               <!--    </g>-->
-               <!--</svg> -->
-            
+            </div>
+            <div id="average">
+                Average <div class="squareAverage"></div>
+            </div> 
+            <div id="expected"> 
+                Expected <div class="squareExpect"></div>
+            </div> 
+                <div class="gender_number">16</div>
+                <div class="gender_number">12</div>
+                <div class="gender_number">8</div>
+                <div class="gender_number">4</div>
+                <div class="gender_number">0</div>
+                <div class="gender_number">4</div>
+                <div class="gender_number">8</div>
+                <div class="gender_number">12</div>
+                <div class="gender_number">16</div>
+            </div>
+        
+        <div id="country">
+            <!--<div id="sentence">-->
+            <!--    If you are a female in Country, you will only go to school for an average of X years. This is Y years less than a male living in Country.-->
+            <!--</div>-->
             <div id="index">
-                <h2></h2>
+                <h1>Rural Access to Electricity</h1>
+                <!--<br><br><br><br>-->
             </div>
         <script type="text/javascript" src="script.js"></script>
         <script>
-            $(document).ready(function(){ console.log('loaded')
+            $(document).ready(function(){ 
+                console.log('loaded')
               // Add scrollspy to <body>
              // $('body').scrollspy({target: ".navbar", offset: 50});   
             
               // Add smooth scrolling on all links inside the navbar
-              $(".ui").on('click', function(event) {
+              $("a").on('click', function(event) {
                   console.log(event)
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
@@ -319,6 +78,7 @@
             
                   // Store hash
                   var hash = this.hash;
+                  console.log("HASH: " + hash);
             
                   // Using jQuery's animate() method to add smooth page scroll
                   // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area

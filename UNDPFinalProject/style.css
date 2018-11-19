@@ -1,0 +1,253 @@
+/* general settings */
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    /*text-align:center;*/
+    background-color: #fbf2ec;
+    margin: 0;
+}
+svg {
+    background: #fbf2ec;
+    /*margin: 10px 0 0 20px;*/
+}
+a {
+}
+
+/*   main content boxes  */
+#title {
+    background-color: #fbf2ec;
+    position:fixed;
+    left:290px;
+    top:0px;
+    width:820px;
+    height:150px;
+    font-family: 'Avenir', serif;
+    font-size: 12px;
+    /*border: 2px solid pink;*/
+    z-index: 100;
+    text-align: center;
+}
+.orangeText
+{
+    color: orange;
+}
+#header {
+    background-color: #fbf2ec;
+    position:fixed;
+    left:290px;
+    top:150px;
+    width:820px;
+    height:100px;
+    font-family: 'Avenir', serif;
+    font-size: 12px;
+    /*border: 2px solid blue;*/
+    z-index: 100;
+    text-align: center;
+}
+#index {
+    background-color: #fbf2ec;
+    font-family: 'Avenir', serif;
+    font-size: 3px;
+    /*border: 2px solid green;*/
+    width: 270px;
+    position: fixed;
+    left: 15px;
+    top: 0px;
+    z-index: 100;
+    padding-top: 0px;
+    padding-left: 25px;
+    overflow-y:auto;
+}
+#country {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    font-family: 'Avenir', serif;
+    font-size: 12px;
+    /*border: 2px solid magenta;*/
+    width: 800px;
+}
+
+/* box contents */
+.gender_number {
+    font-size: 9px;
+    color: Gray;
+    display: inline-block;
+    width: 87.5px;
+    text-align: center;
+}
+
+#index h1 {
+    font-family: 'Avenir', serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight:500;
+    margin-top: 10px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.country_title {
+    font-size: 12px;
+    height: 20px;
+    width: 800px;
+    text-align: center;
+}
+.country_percent {
+    font-size: 14px;
+    height: 20px;
+    width: 800px;
+    text-align: center;
+}
+.country_anchor {
+    height: 280px;
+}
+
+#titleLineOne {
+    left:3%;
+    top:20px;
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight:250;
+}
+#main {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    font-weight:500;
+    width: 800px;
+    display: inline-block;
+    margin-top: 40px;
+}
+#subtitle {
+    font-family: 'Montserrat', serif;
+    font-size: 10px;
+    font-weight:200;
+    width: 750px;
+    display: inline-block;
+    margin-top: 10px;
+}
+#sentence {
+    background: white;
+    position:fixed;
+    width:700px;
+    /*border: 2px solid green;*/
+    font-family: 'Montserrat', serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight:600;
+    z-index: 100;
+    top:400px;
+    left:350px;
+}
+#female {
+    font-family: 'Avenir', serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight:500;
+    width: 300px;
+    display: inline-block;
+    text-decoration: underline;
+}
+#male {
+    font-family: 'Avenir', serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight:500;
+    width: 300px;
+    display: inline-block;
+    text-decoration: underline;
+}
+#years {
+    font-family: 'Avenir', serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight:500;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+#average {
+    font-family: 'Avenir', serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight:300;
+    width: 100px;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 300px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-weight:500;
+}
+#expected {
+    font-family: 'Avenir', serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight:300;
+    width: 100px;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 300px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-weight:500;
+}
+.squareAverage {
+    height: 9px;
+    width: 9px;
+    background-color: #F5C250;
+    display: inline-block;
+    margin-left: 7px;
+}
+.squareExpect {
+    height: 9px;
+    width: 9px;
+    background-color: #f7d9a2;
+    display: inline-block;
+    margin-left: 7px;
+}
+rect {
+    margin-right: 40px;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+p {
+    font-size: 8px;
+    text-align: left;
+    line-height: 0.1;
+}
+
+#index svg {
+    width:50px;
+    height:9px;
+    display: inline;
+    margin:0;
+    
+}
+#index p {
+    display: inline;
+    margin:0;
+}
