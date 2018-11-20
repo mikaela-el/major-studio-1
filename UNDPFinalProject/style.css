@@ -29,9 +29,11 @@ a {
     z-index: 100;
     text-align: center;
 }
-.orangeText
-{
+.orangeText{
     color: orange;
+}
+.redText{
+    color: orangered;
 }
 #header {
     background-color: #fbf2ec;

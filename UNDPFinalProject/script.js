@@ -93,8 +93,8 @@ let svg = (items) => {
             .range([0, 22])
             
     let colorScale = d3.scaleLinear()
-        .domain([0, 100])
-        .range(["Red", "Orange"])
+        .domain([0, 120])
+        .range(["red", "darkorange"])
         
     // Center Line 
     box.append("line")
@@ -194,7 +194,6 @@ let svg = (items) => {
         .style('fill', 'black')
         .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
         + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean) + " " + "years."; });
-        
         
  // style the bars (=rectangles) Female Mean Education 
     rectFemaleMean.attr('width', (d,i) => { return scale(items[i].FemaleMean); })
