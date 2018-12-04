@@ -1,6 +1,7 @@
 // load data set  
 //const data = d3.json("datatest.json");
-const data = d3.json("newdata2.json");
+// const data = d3.json("newdata2.json");
+const data = d3.json("undpdata3.json");
     
 data.then( items => {
                 console.log(items);
@@ -57,11 +58,53 @@ let svg = (items) => {
         .attr('class', 'b');
 
 // append data to svg, then append a rectangle (bar) for Female Mean Education 
-    let rectFemaleMean = box.selectAll('rect.f')
+    let rectFemaleMean2016 = box.selectAll('rect.f')
       .data(items)
       .enter()
       .append('rect')
       .attr('class', 'f');
+      
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean2015 = box.selectAll('rect.b')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'b');
+
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean2010 = box.selectAll('rect.z')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'z');
+
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean2005 = box.selectAll('rect.y')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'y');
+      
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean2000 = box.selectAll('rect.w')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'w');
+
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean1995 = box.selectAll('rect.q')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'q');
+
+// append data to svg, then append a rectangle (bar) for Female Mean Education 
+    let rectFemaleMean1990 = box.selectAll('rect.v')
+      .data(items)
+      .enter()
+      .append('rect')
+      .attr('class', 'v');
 
 // append data to svg, then append a rectangle (bar) for Male Mean Education 
     let rectMaleMean = box.selectAll('rect.m')
@@ -193,15 +236,63 @@ let svg = (items) => {
         .style("font-size", "15px") 
         .style('fill', 'black')
         .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
-        + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean) + " " + "years."; });
+        + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean2016) + " " + "years."; });
         
  // style the bars (=rectangles) Female Mean Education 
-    rectFemaleMean.attr('width', (d,i) => { return scale(items[i].FemaleMean); })
-        .attr('height', 45)
+    rectFemaleMean2016.attr('width', (d,i) => { return scale(items[i].FemaleMean2016); })
+        .attr('height', 8)
         .attr('x', 400)
         .attr('y', (items, i) => { return 360 + 400*i; })
         .attr('fill', '#f5c250')
-        .attr('id', (d) => { return d.Country+"_fem_mean"; });
+        .attr('id', (d) => { return d.Country+"_fem_mean_2016"; });
+        
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean2015.attr('width', (d,i) => { return scale(items[i].FemaleMean2015); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 370 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_2015"; });
+
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean2010.attr('width', (d,i) => { return scale(items[i].FemaleMean2010); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 380 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_2010"; });
+
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean2005.attr('width', (d,i) => { return scale(items[i].FemaleMean2005); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 390 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_2005"; });
+
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean2000.attr('width', (d,i) => { return scale(items[i].FemaleMean2000); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 400 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_2000"; });
+        
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean1995.attr('width', (d,i) => { return scale(items[i].FemaleMean1995); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 410 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_1995"; });
+
+ // style the bars (=rectangles) Female Mean Education 
+    rectFemaleMean1990.attr('width', (d,i) => { return scale(items[i].FemaleMean1990); })
+        .attr('height', 8)
+        .attr('x', 400)
+        .attr('y', (items, i) => { return 420 + 400*i; })
+        .attr('fill', '#f5c250')
+        .attr('id', (d) => { return d.Country+"_fem_mean_1990"; });
 
  // style the bars (=rectangles) Female Expected Education 
     rectFemaleExpect.attr('width', (d,i) => { return scale(items[i].FemaleExpect); })
