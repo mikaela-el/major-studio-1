@@ -53,14 +53,14 @@ a {
     font-family: 'Avenir', serif;
     font-size: 3px;
     /*border: 2px solid green;*/
-    width: 270px;
+    width: 250px;
     position: fixed;
     left: 15px;
     top: 0px;
     z-index: 100;
     padding-top: 0px;
     padding-left: 25px;
-    overflow-y:auto;
+    /*overflow-y:auto;*/
 }
 #country {
     position: absolute;
