@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 svg {
-    background: #fbf2ec;
+    /*background: #fbf2ec;*/
     /*margin: 10px 0 0 20px;*/
 }
 a {
@@ -22,7 +22,7 @@ a {
     left:290px;
     top:0px;
     width:820px;
-    height:150px;
+    height:200px;
     font-family: 'Avenir', serif;
     font-size: 12px;
     /*border: 2px solid pink;*/
@@ -39,7 +39,7 @@ a {
     background-color: #fbf2ec;
     position:fixed;
     left:290px;
-    top:150px;
+    top:200px;
     width:820px;
     height:100px;
     font-family: 'Avenir', serif;
@@ -104,9 +104,15 @@ a {
     text-align: center;
 }
 .country_anchor {
-    height: 280px;
+    height: 310px;
+    /*border: 2px solid black;*/
 }
-
+.hidden {
+    display:none;
+}
+.normal {
+    display:normal;
+}
 #titleLineOne {
     left:3%;
     top:20px;

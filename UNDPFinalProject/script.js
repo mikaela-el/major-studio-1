@@ -1,8 +1,6 @@
 // load data set  
-//const data = d3.json("datatest.json");
-// const data = d3.json("newdata2.json");
 const data = d3.json("undpdata4.json");
-//const data = d3.json("egypt.json");
+
     
 data.then( items => {
                 console.log(items);
@@ -306,106 +304,23 @@ let svg = (items) => {
           .style("stroke", 'aaaaaa');
 
 
-// style the text for the sentence 
-    sentenceOne.attr('x', 400)
-        .attr('y', (items, i) => { return 500 + 400*i; })
-        .attr("text-anchor", "middle")
-        .style("font-size", "15px") 
-        .style('fill', 'black')
-        .text((d,i) => { return "In" + " " + (items[i].Country) + "," +  " " + (items[i].RuralElec) 
-        + "% of the rural population has access to electricity."; });
+// // style the text for the sentence 
+//     sentenceOne.attr('x', 400)
+//         .attr('y', (items, i) => { return 575 + 400*i; })
+//         .attr("text-anchor", "middle")
+//         .style("font-size", "15px") 
+//         .style('fill', 'black')
+//         .text((d,i) => { return "In" + " " + (items[i].Country) + "," +  " " + (items[i].RuralElec) 
+//         + "% of the rural population has access to electricity."; });
         
-// style the text for the sentence 
-    sentenceTwo.attr('x', 400)
-        .attr('y', (items, i) => { return 550 + 400*i; })
-        .attr("text-anchor", "middle")
-        .style("font-size", "15px") 
-        .style('fill', 'black')
-        .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
-        + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean2016) + " " + "years."; });
-        
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleExpect.attr('width', (d,i) => { return scale(items[i].FemaleMean2016); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 360 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_2016"; });
-        
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean2015.attr('width', (d,i) => { return scale(items[i].FemaleMean2015); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 370 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_2015"; });
-
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean2010.attr('width', (d,i) => { return scale(items[i].FemaleMean2010); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 380 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_2010"; });
-
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean2005.attr('width', (d,i) => { return scale(items[i].FemaleMean2005); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 390 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_2005"; });
-
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean2000.attr('width', (d,i) => { return scale(items[i].FemaleMean2000); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 400 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_2000"; });
-        
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean1995.attr('width', (d,i) => { return scale(items[i].FemaleMean1995); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 410 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_1995"; });
-
-//  // style the bars (=rectangles) Female Mean Education 
-//     rectFemaleMean1990.attr('width', (d,i) => { return scale(items[i].FemaleMean1990); })
-//         .attr('height', 8)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 420 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_fem_mean_1990"; });
-
-//  // style the bars (=rectangles) Female Expected Education 
-//     rectFemaleExpect.attr('width', (d,i) => { return scale(items[i].FemaleExpect); })
-//         .attr('height', 45)
-//         .attr('x', 400)
-//         .attr('y', (items, i) => { return 360 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr("fill-opacity", 0.5)
-//         .attr('id', (d) => { return d.Country+"_fem_exp"; });
-
-//  // style the bars (=rectangles) Male Mean Education 
-//     rectMaleMean.attr('width', (d,i) => { return scale(items[i].MaleMean); })
-//         .attr('height', 45)
-//         .attr('x', (d,i) => { return 400-scale(items[i].MaleMean); })
-//         .attr('y', (items, i) => { return 360 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr('id', (d) => { return d.Country+"_mal_mean"; });
-        
-//  // style the bars (=rectangles) Male Expected Education 
-//     rectMaleExpect.attr('width', (d,i) => { return scale(items[i].MaleExpect); })
-//         .attr('height', 45)
-//         .attr('x', (d,i) => { return 400-scale(items[i].MaleExpect); })
-//         .attr('y', (items, i) => { return 360 + 400*i; })
-//         .attr('fill', '#f5c250')
-//         .attr("fill-opacity", 0.5)
-//         .attr('id', (d) => { return d.Country+"_mal_exp"; });
-
+// // style the text for the sentence 
+//     sentenceTwo.attr('x', 400)
+//         .attr('y', (items, i) => { return 625 + 400*i; })
+//         .attr("text-anchor", "middle")
+//         .style("font-size", "15px") 
+//         .style('fill', 'black')
+//         .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
+//         + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean2016) + " " + "years."; });
 
 // Countries to list for Country div   
    items.forEach( (item, i) => {
@@ -422,56 +337,184 @@ let svg = (items) => {
             .style('font-size', '6px')
             .style('font-weight', '400');
         
-        let countrySVG = country.append("svg").attr('id', (item.Country))
-            .attr('width', 800);
+        let countrySVG = country.append("svg")
+            .attr('id', (item.Country))
+            .attr('width', 800)
+            .attr('height', 200)
+            .on('mouseover', () => {
+                console.log('hi')
+                d3.selectAll(".toggle").attr('class', 'toggle normal');
+                d3.select("#subtitle").html("Women are expected to receive" + item.Country)
+            })
+            .on('mouseout', () => {
+                console.log('bye')
+                d3.selectAll(".toggle").attr('class', 'toggle hidden');
+            });
+            
+            // .on('mouseout', function(d) {
+            //     		d3.select(this).select('text')
+            //     		    .text((d) => { return d.name; })
+
+            //     		d3.select(this).select('rect')
+            // 				.style('fill', 'black');
+            //         });
             
         // Loop for multiple rectangles by year 
         for (var m = 6; m>=0; m--) {
+            
+            // Text for year of rectangle 
             countrySVG
                 .append("text")
                 .text(item.Female.Expect[m].year)
                 .attr('x', 400)
-                .attr('y', (items, i) => { return 10*(6-m); });
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)
+                    } else {
+                        return 30+(17*(7-m))
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+            
+            // // Text for value of rectangle 
+            // countrySVG
+            //     .append("text")
+            //     .text(item.Female.Expect[m].value)
+            //     .attr('x', (d,i) => { return 400+scale(item.Female.Mean[m].value); })
+            //     .attr('y', () => {
+            //         if (item.Female.Expect[m].year == '2016') {
+            //             return 17*(7-m)
+            //         } else {
+            //             return 30+(17*(7-m))
+            //         }
+            //     })
+            //     .style('font-size', '8px')
+            //     .style('text-anchor', 'middle')
+            //     .attr('class', () => {
+            //         if (item.Female.Expect[m].year != '2016') {
+            //             return 'toggle hidden'
+            //         }
+            //     });
             
             //Styling Female Mean
             countrySVG    
                 .append("rect")
                 .attr('width', (d,i) => { return scale(item.Female.Mean[m].value); })
-                .attr('height', 8)
+                .attr('height', 10)
+                .attr('height', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 40
+                    } else {
+                        return 10
+                    }
+                })
                 .attr('x', 400)
-                .attr('y', (items, i) => { return 10*(6-m); })
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)
+                    } else {
+                        return 30+(17*(7-m))
+                    }
+                })
                 .attr('fill', '#f5c250')
-                .attr('id', () => { return item.Country+"_fem_mean_2016"; });
+                .attr("fill-opacity", 0.8)
+                .attr('id', () => { return item.Country+"_fem_mean_2016"; })
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+                
                 
             //Styling Female Expect
             countrySVG    
                 .append("rect")
                 .attr('width', (d,i) => { return scale(item.Female.Expect[m].value); })
-                .attr('height', 8)
+                .attr('height', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 40
+                    } else {
+                        return 10
+                    }
+                })
                 .attr('x', 400)
-                .attr('y', (items, i) => { return 10*(6-m); })
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)
+                    } else {
+                        return 30+(17*(7-m))
+                    }
+                })
                 .attr('fill', '#f7d9a2')
-                .attr('id', () => { return item.Country+"_fem_expect_2016"; });
+                .attr("fill-opacity", 0.5)
+                .attr('id', () => { return item.Country+"_fem_expect_2016"; })
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
             
             //Styling Male Mean
             countrySVG    
                 .append("rect")
                 .attr('width', (d,i) => { return scale(item.Male.Mean[m].value); })
-                .attr('height', 8)
+                .attr('height', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 40
+                    } else {
+                        return 10
+                    }
+                })
                 .attr('x', (d,i) => { return 400-scale(item.Male.Mean[m].value); })
-                .attr('y', (items, i) => { return 10*(6-m); })
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)
+                    } else {
+                        return 30+(17*(7-m))
+                    }
+                })
                 .attr('fill', '#f5c250')
-                .attr('id', () => { return item.Country+"_mal_mean_2016"; });
+                .attr("fill-opacity", 0.8)
+                .attr('id', () => { return item.Country+"_mal_mean_2016"; })
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
             
             //Styling Male Expect
             countrySVG    
                 .append("rect")
                 .attr('width', (d,i) => { return scale(item.Male.Expect[m].value); })
-                .attr('height', 8)
+                .attr('height', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 40
+                    } else {
+                        return 10
+                    }
+                })
                 .attr('x', (d,i) => { return 400-scale(item.Male.Expect[m].value); })
-                .attr('y', (items, i) => { return 10*(6-m); })
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)
+                    } else {
+                        return 30+(17*(7-m))
+                    }
+                })
                 .attr('fill', '#f7d9a2')
-                .attr('id', () => { return item.Country+"_mal_expect_2016"; });
+                .attr("fill-opacity", 0.5)
+                .attr('id', () => { return item.Country+"_mal_expect_2016"; })
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
         }
     });
     
