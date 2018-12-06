@@ -1768,7 +1768,7 @@
     "DiffMean": 1
   },
   {
-    "Country": "Central African Republic (CAR)",
+    "Country": "Central African Republic",
     "Region": "Central",
     "FemaleMean1990": 1.1,
     "FemaleMean1995": 1.4,
@@ -1802,7 +1802,7 @@
     "DiffMean": 2.6
   },
   {
-    "Country": "Democratic Republic of the%uFFFDCongo",
+    "Country": "Democratic Republic of the Congo",
     "Region": "Central",
     "FemaleMean1990": 1.3,
     "FemaleMean1995": 1.8,
