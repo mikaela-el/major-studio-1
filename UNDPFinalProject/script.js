@@ -10,6 +10,9 @@ data.then( items => {
                     countryObject["Country"] = orig["Country"];
                     countryObject["Region"] = orig["Region"];
                     countryObject["RuralElec"] = orig["RuralElec"];
+                    countryObject["DiffMean"] = orig["DiffMean"];
+                    countryObject["FemaleMean2016"] = orig["FemaleMean2016"];
+                    countryObject["FemaleExpect2016"] = orig["FemaleExpect2016"];
                     
                     // let femaleMeanArray = [{"1990": orig.FemaleMean1990}, {"1995": orig.FemaleMean1995}, {"2000": orig.FemaleMean2000}, {"2005": orig.FemaleMean2000}, {"2010": orig.FemaleMean2000}, {"2015": orig.FemaleMean2000}, {"2016": orig.FemaleMean2000}];
                     let femaleMeanArray = [
@@ -229,12 +232,12 @@ let svg = (items) => {
           .attr("x2", 400)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
-          .style("stroke", 'E2E1E0');
-    
+          .style("stroke", 'E2E1E0')
+          
     // Male 4 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 310; } )
-          .attr("x2", (d,i) => { return 310; } )
+          .attr("x1", 300)
+          .attr("x2", 300)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -242,8 +245,8 @@ let svg = (items) => {
     
     // Female 4 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 490; } )
-          .attr("x2", (d,i) => { return 490; } )
+          .attr("x1", 500)
+          .attr("x2", 500)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -251,8 +254,8 @@ let svg = (items) => {
     
      // Male 8 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 220; } )
-          .attr("x2", (d,i) => { return 220; } )
+          .attr("x1", 200)
+          .attr("x2", 200)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -260,8 +263,8 @@ let svg = (items) => {
     
      // Female 8 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 580; } )
-          .attr("x2", (d,i) => { return 580; } )
+          .attr("x1", 600)
+          .attr("x2", 600)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -269,8 +272,8 @@ let svg = (items) => {
 
     // Male 12 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 130; } )
-          .attr("x2", (d,i) => { return 130; } )
+          .attr("x1", 100)
+          .attr("x2", 100)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -278,8 +281,8 @@ let svg = (items) => {
     
     // Female 12 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 670; } )
-          .attr("x2", (d,i) => { return 670; } )
+          .attr("x1", 700)
+          .attr("x2", 700)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -287,8 +290,8 @@ let svg = (items) => {
     
     // Male 16 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 40; } )
-          .attr("x2", (d,i) => { return 40; } )
+          .attr("x1", 0)
+          .attr("x2", 0)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
@@ -296,13 +299,12 @@ let svg = (items) => {
     
      // Female 16 Year Line 
     box.append("line")
-          .attr("x1", (d,i) => { return 760; } )
-          .attr("x2", (d,i) => { return 760; } )
+          .attr("x1", 800)
+          .attr("x2", 800)
           .attr("y1", 30)
           .attr("y2", window.innerHeight*36.2)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
-
 
 // // style the text for the sentence 
 //     sentenceOne.attr('x', 400)
@@ -344,69 +346,21 @@ let svg = (items) => {
             .on('mouseover', () => {
                 console.log('hi')
                 d3.selectAll(".toggle").attr('class', 'toggle normal');
-                d3.select("#subtitle").html("Women are expected to receive" + item.Country)
+                d3.select("#dynamicSentence").html("In " + item.Country + ", <span class='electric'>" + item.RuralElec + "%</span> of the rural population has access to electricity. Women are expected to receive <span class='femaleExpected'>" + item.FemaleExpect2016 + " years </span> of schooling however, will only receive an average of <span class='femaleMean'>" + item.FemaleMean2016 + " years</span>." + " This is <span class='diffMean'>" + item.DiffMean + " years</span> less than men.");
+                d3.select("#subtitle").html("");
             })
             .on('mouseout', () => {
                 console.log('bye')
                 d3.selectAll(".toggle").attr('class', 'toggle hidden');
             });
             
-            // .on('mouseout', function(d) {
-            //     		d3.select(this).select('text')
-            //     		    .text((d) => { return d.name; })
-
-            //     		d3.select(this).select('rect')
-            // 				.style('fill', 'black');
-            //         });
-            
         // Loop for multiple rectangles by year 
         for (var m = 6; m>=0; m--) {
-            
-            // Text for year of rectangle 
-            countrySVG
-                .append("text")
-                .text(item.Female.Expect[m].year)
-                .attr('x', 400)
-                .attr('y', () => {
-                    if (item.Female.Expect[m].year == '2016') {
-                        return 17*(7-m)
-                    } else {
-                        return 30+(17*(7-m))
-                    }
-                })
-                .style('font-size', '8px')
-                .style('text-anchor', 'middle')
-                .attr('class', () => {
-                    if (item.Female.Expect[m].year != '2016') {
-                        return 'toggle hidden'
-                    }
-                });
-            
-            // // Text for value of rectangle 
-            // countrySVG
-            //     .append("text")
-            //     .text(item.Female.Expect[m].value)
-            //     .attr('x', (d,i) => { return 400+scale(item.Female.Mean[m].value); })
-            //     .attr('y', () => {
-            //         if (item.Female.Expect[m].year == '2016') {
-            //             return 17*(7-m)
-            //         } else {
-            //             return 30+(17*(7-m))
-            //         }
-            //     })
-            //     .style('font-size', '8px')
-            //     .style('text-anchor', 'middle')
-            //     .attr('class', () => {
-            //         if (item.Female.Expect[m].year != '2016') {
-            //             return 'toggle hidden'
-            //         }
-            //     });
             
             //Styling Female Mean
             countrySVG    
                 .append("rect")
                 .attr('width', (d,i) => { return scale(item.Female.Mean[m].value); })
-                .attr('height', 10)
                 .attr('height', () => {
                     if (item.Female.Expect[m].year == '2016') {
                         return 40
@@ -419,7 +373,7 @@ let svg = (items) => {
                     if (item.Female.Expect[m].year == '2016') {
                         return 17*(7-m)
                     } else {
-                        return 30+(17*(7-m))
+                        return 30+(14*(7-m)+3)
                     }
                 })
                 .attr('fill', '#f5c250')
@@ -448,7 +402,7 @@ let svg = (items) => {
                     if (item.Female.Expect[m].year == '2016') {
                         return 17*(7-m)
                     } else {
-                        return 30+(17*(7-m))
+                        return 30+(14*(7-m)+3)
                     }
                 })
                 .attr('fill', '#f7d9a2')
@@ -476,7 +430,7 @@ let svg = (items) => {
                     if (item.Female.Expect[m].year == '2016') {
                         return 17*(7-m)
                     } else {
-                        return 30+(17*(7-m))
+                        return 30+(14*(7-m)+3)
                     }
                 })
                 .attr('fill', '#f5c250')
@@ -504,7 +458,7 @@ let svg = (items) => {
                     if (item.Female.Expect[m].year == '2016') {
                         return 17*(7-m)
                     } else {
-                        return 30+(17*(7-m))
+                        return 30+(14*(7-m)+3)
                     }
                 })
                 .attr('fill', '#f7d9a2')
@@ -515,9 +469,115 @@ let svg = (items) => {
                         return 'toggle hidden'
                     }
                 });
+                
+            // Text for year of rectangle 
+            countrySVG
+                .append("text")
+                .text(item.Female.Expect[m].year)
+                .attr('x', 400)
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)-3
+                    } else {
+                        return 38+(14*(7-m)+3)
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+            
+            // Text for value of rectangle for Female Expect 
+            countrySVG
+                .append("text")
+                .text(item.Female.Expect[m].value)
+                .attr('x', (d,i) => { return 400+scale(item.Female.Expect[m].value) +7; })
+                .attr('y', () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 22.5+(17*(7-m))
+                    } else {
+                        return 38+(14*(7-m)+3)
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Female.Expect[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+                
+            // Text for value of rectangle for Female Mean 
+            countrySVG
+                .append("text")
+                .text(item.Female.Mean[m].value)
+                .attr('x', (d,i) => { return 400+scale(item.Female.Mean[m].value) +7; })
+                .attr('y', () => {
+                    if (item.Female.Mean[m].year == '2016') {
+                        return 22.5+(17*(7-m))
+                    } else {
+                        return 38+(14*(7-m)+3)
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Female.Mean[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+                
+            // Text for value of rectangle for Male Expect 
+            countrySVG
+                .append("text")
+                .text(item.Male.Expect[m].value)
+                .attr('x', (d,i) => { return 400-scale(item.Male.Expect[m].value) -7; })
+                .attr('y', () => {
+                    if (item.Male.Expect[m].year == '2016') {
+                        return 22.5+(17*(7-m))
+                    } else {
+                        return 38+(14*(7-m)+3)
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Male.Mean[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
+                
+            // Text for value of rectangle for Male Mean 
+            countrySVG
+                .append("text")
+                .text(item.Male.Mean[m].value)
+                // .text( () => {
+                //     if (item.Male.Mean[m].value == '') {
+                //         return "n/a"
+                //     } else {
+                //         return item.Male.Mean[m].value
+                //     }
+                // })
+                .attr('x', (d,i) => { return 400-scale(item.Male.Mean[m].value) -7; })
+                .attr('y', () => {
+                    if (item.Male.Mean[m].year == '2016') {
+                        return 22.5+(17*(7-m))
+                    } else {
+                        return 38+(14*(7-m)+3)
+                    }
+                })
+                .style('font-size', '8px')
+                .style('text-anchor', 'middle')
+                .attr('class', () => {
+                    if (item.Male.Mean[m].year != '2016') {
+                        return 'toggle hidden'
+                    }
+                });
         }
     });
-    
 
     // Countries to list for Index DIV              
     let margins = d3.select('#index')

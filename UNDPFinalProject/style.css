@@ -21,7 +21,7 @@ a {
     position:fixed;
     left:290px;
     top:0px;
-    width:820px;
+    width:900px;
     height:200px;
     font-family: 'Avenir', serif;
     font-size: 12px;
@@ -30,17 +30,17 @@ a {
     text-align: center;
 }
 .orangeText{
-    color: orange;
+    color: black;
 }
 .redText{
-    color: orangered;
+    color: black;
 }
 #header {
     background-color: #fbf2ec;
     position:fixed;
     left:290px;
     top:200px;
-    width:820px;
+    width:900px;
     height:100px;
     font-family: 'Avenir', serif;
     font-size: 12px;
@@ -56,16 +56,18 @@ a {
     width: 250px;
     position: fixed;
     left: 15px;
-    top: 0px;
+    top: 30px;
+    bottom: 0px;
+    padding-bottom: 50px;
     z-index: 100;
     padding-top: 0px;
     padding-left: 25px;
-    /*overflow-y:auto;*/
+    overflow-y:auto;
 }
 #country {
     position: absolute;
     top: 120px;
-    left: 300px;
+    left: 340px;
     font-family: 'Avenir', serif;
     font-size: 12px;
     /*border: 2px solid magenta;*/
@@ -77,8 +79,12 @@ a {
     font-size: 9px;
     color: Gray;
     display: inline-block;
-    width: 87.5px;
+    width: 100px;
     text-align: center;
+    
+}
+#gendernumbers {
+    font-size: 0;
 }
 
 #index h1 {
@@ -107,11 +113,17 @@ a {
     height: 310px;
     /*border: 2px solid black;*/
 }
+/*.toggle {*/
+/*    transition: transform 0.25s;*/
+/*}*/
 .hidden {
     display:none;
+    /*transform: scale(0);*/
+    
 }
 .normal {
     display:normal;
+    /*transform: scale(1);*/
 }
 #titleLineOne {
     left:3%;
@@ -131,11 +143,20 @@ a {
 }
 #subtitle {
     font-family: 'Montserrat', serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight:200;
     width: 750px;
     display: inline-block;
     margin-top: 10px;
+}
+#dynamicSentence {
+    font-family: 'Montserrat', serif;
+    font-size: 15px;
+    font-weight:200;
+    width: 750px;
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 1.6;
 }
 #sentence {
     background: white;
@@ -259,3 +280,20 @@ p {
     display: inline;
     margin:0;
 }
+.electric {
+    color:red;
+    text-decoration: underline;
+}
+.femaleExpected {
+    color:black;
+    text-decoration: underline;
+}
+.femaleMean {
+    color:black;
+    text-decoration: underline;
+}
+.diffMean {
+    color:orange;
+    text-decoration: underline;
+}
+
