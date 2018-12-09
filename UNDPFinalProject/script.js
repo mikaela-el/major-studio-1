@@ -198,7 +198,7 @@ let svg = (items) => {
     let box = d3.select('#country')
         .append('svg')
         .attr('width', 800)
-        .attr('height', window.innerHeight*36.5);
+        .attr('height', window.innerHeight*33.5);
 
 // append data to svg, then append a rectangle (bar) for Male Expected Education 
     let sentenceOne = box.selectAll('text.s')
@@ -231,15 +231,16 @@ let svg = (items) => {
           .attr("x1", 400)
           .attr("x2", 400)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
-          .style("stroke", 'E2E1E0')
+          .attr("y2", window.innerHeight*36.7)
+          .style("stroke", 'E2E1E0');
+          
           
     // Male 4 Year Line 
     box.append("line")
           .attr("x1", 300)
           .attr("x2", 300)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -248,7 +249,7 @@ let svg = (items) => {
           .attr("x1", 500)
           .attr("x2", 500)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -257,7 +258,7 @@ let svg = (items) => {
           .attr("x1", 200)
           .attr("x2", 200)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -266,7 +267,7 @@ let svg = (items) => {
           .attr("x1", 600)
           .attr("x2", 600)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
 
@@ -275,7 +276,7 @@ let svg = (items) => {
           .attr("x1", 100)
           .attr("x2", 100)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -284,7 +285,7 @@ let svg = (items) => {
           .attr("x1", 700)
           .attr("x2", 700)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -293,7 +294,7 @@ let svg = (items) => {
           .attr("x1", 0)
           .attr("x2", 0)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
     
@@ -302,7 +303,7 @@ let svg = (items) => {
           .attr("x1", 800)
           .attr("x2", 800)
           .attr("y1", 30)
-          .attr("y2", window.innerHeight*36.2)
+          .attr("y2", window.innerHeight*36.7)
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
 
@@ -384,7 +385,6 @@ let svg = (items) => {
                         return 'toggle hidden'
                     }
                 });
-                
                 
             //Styling Female Expect
             countrySVG    
@@ -576,6 +576,27 @@ let svg = (items) => {
                         return 'toggle hidden'
                     }
                 });
+                
+            countrySVG.append("line")    // Center Line 
+              .attr("x1", 400)
+              .attr("x2", 400)
+              .attr("y1", () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)-20
+                    } else {
+                        return 30+(14*(7-m)+3)-20
+                    }
+                })
+              .attr("y2", () => {
+                    if (item.Female.Expect[m].year == '2016') {
+                        return 17*(7-m)+20
+                    } else {
+                        return 30+(14*(7-m)+3)+20
+                    }
+                })
+              .style("stroke", 'E2E1E0');
+                
+                
         }
     });
 
@@ -635,6 +656,10 @@ let svg = (items) => {
         .attr('y', (items, i) => { return 0; })
         .attr('fill', (d,i) => { return colorScale(items[i].RuralElec); })
         .attr("fill-opacity", 0.5);
+
+
+    var mydiv = $('#country');
+    mydiv.find('#sources').appendTo(mydiv)
 
 }
 

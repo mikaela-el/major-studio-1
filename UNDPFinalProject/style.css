@@ -30,10 +30,10 @@ a {
     text-align: center;
 }
 .orangeText{
-    color: black;
+    color: #FF8C00;
 }
 .redText{
-    color: black;
+    color: #FF2400;
 }
 #header {
     background-color: #fbf2ec;
@@ -72,6 +72,13 @@ a {
     font-size: 12px;
     /*border: 2px solid magenta;*/
     width: 800px;
+}
+#sources {
+    background-color: #fbf2ec;
+    width:800px;
+    height:270px;
+    z-index: 100;
+    padding-bottom: 50px;
 }
 
 /* box contents */
@@ -128,30 +135,30 @@ a {
 #titleLineOne {
     left:3%;
     top:20px;
-    font-family: 'Montserrat', serif;
+    font-family: 'Avenir', serif;
     font-size: 25px;
     text-align: center;
     font-weight:250;
 }
 #main {
-    font-family: 'Montserrat', serif;
+    font-family: 'Avenir', serif;
     font-size: 20px;
-    font-weight:500;
+    font-weight:600;
     width: 800px;
     display: inline-block;
     margin-top: 40px;
 }
 #subtitle {
-    font-family: 'Montserrat', serif;
+    font-family: 'Avenir', serif;
     font-size: 12px;
-    font-weight:200;
+    font-weight:400;
     width: 750px;
     display: inline-block;
     margin-top: 10px;
 }
 #dynamicSentence {
-    font-family: 'Montserrat', serif;
-    font-size: 15px;
+    font-family: 'Avenir', serif;
+    font-size: 16px;
     font-weight:200;
     width: 750px;
     display: inline-block;
@@ -283,17 +290,31 @@ p {
 .electric {
     color:red;
     text-decoration: underline;
+    font-weight: 500;
 }
 .femaleExpected {
-    color:black;
+    color:#FF8C00;
     text-decoration: underline;
+    font-weight: 600;
 }
 .femaleMean {
-    color:black;
+    color:#FF8C00;
     text-decoration: underline;
+        font-weight: 600;
 }
 .diffMean {
-    color:orange;
+    color:black;
     text-decoration: underline;
+    font-weight: 500;
 }
-
+h3 {
+    font-size: 12px;
+    font-family: 'Avenir', serif;
+    font-weight:400;
+}
+#sourceStyle {
+    line-height: 1.6;
+    font-size: 10px;
+    font-family: 'Avenir', serif;
+    font-weight:400;
+}
