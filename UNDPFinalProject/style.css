@@ -93,7 +93,7 @@ a {
     padding-bottom: 50px;
     font-family: 'Avenir', serif;
     font-size: 12px;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 /* box contents */
