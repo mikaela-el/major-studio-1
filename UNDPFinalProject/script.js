@@ -482,7 +482,7 @@ let svg = (items) => {
                         return 38+(14*(7-m)+3)
                     }
                 })
-                .style('font-size', '8px')
+                .style('font-size', '9px')
                 .style('text-anchor', 'middle')
                 .attr('class', () => {
                     if (item.Female.Expect[m].year != '2016') {
@@ -502,7 +502,7 @@ let svg = (items) => {
                         return 38+(14*(7-m)+3)
                     }
                 })
-                .style('font-size', '8px')
+                .style('font-size', '9px')
                 .style('text-anchor', 'middle')
                 .attr('class', () => {
                     if (item.Female.Expect[m].year != '2016') {
@@ -522,7 +522,7 @@ let svg = (items) => {
                         return 38+(14*(7-m)+3)
                     }
                 })
-                .style('font-size', '8px')
+                .style('font-size', '9px')
                 .style('text-anchor', 'middle')
                 .attr('class', () => {
                     if (item.Female.Mean[m].year != '2016') {
@@ -542,7 +542,7 @@ let svg = (items) => {
                         return 38+(14*(7-m)+3)
                     }
                 })
-                .style('font-size', '8px')
+                .style('font-size', '9px')
                 .style('text-anchor', 'middle')
                 .attr('class', () => {
                     if (item.Male.Mean[m].year != '2016') {
@@ -569,7 +569,7 @@ let svg = (items) => {
                         return 38+(14*(7-m)+3)
                     }
                 })
-                .style('font-size', '8px')
+                .style('font-size', '9px')
                 .style('text-anchor', 'middle')
                 .attr('class', () => {
                     if (item.Male.Mean[m].year != '2016') {
@@ -577,24 +577,24 @@ let svg = (items) => {
                     }
                 });
                 
-            countrySVG.append("line")    // Center Line 
-              .attr("x1", 400)
-              .attr("x2", 400)
-              .attr("y1", () => {
-                    if (item.Female.Expect[m].year == '2016') {
-                        return 17*(7-m)-20
-                    } else {
-                        return 30+(14*(7-m)+3)-20
-                    }
-                })
-              .attr("y2", () => {
-                    if (item.Female.Expect[m].year == '2016') {
-                        return 17*(7-m)+20
-                    } else {
-                        return 30+(14*(7-m)+3)+20
-                    }
-                })
-              .style("stroke", 'E2E1E0');
+            // countrySVG.append("line")    // Center Line 
+            //   .attr("x1", 400)
+            //   .attr("x2", 400)
+            //   .attr("y1", () => {
+            //         if (item.Female.Expect[m].year == '2016') {
+            //             return 17*(7-m)-20
+            //         } else {
+            //             return 30+(14*(7-m)+3)-20
+            //         }
+            //     })
+            //   .attr("y2", () => {
+            //         if (item.Female.Expect[m].year == '2016') {
+            //             return 17*(7-m)+20
+            //         } else {
+            //             return 30+(14*(7-m)+3)+20
+            //         }
+            //     })
+            //   .style("stroke", 'E2E1E0');
                 
                 
         }
