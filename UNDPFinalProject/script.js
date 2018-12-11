@@ -347,7 +347,13 @@ let svg = (items) => {
             .on('mouseover', () => {
                 console.log('hi')
                 d3.selectAll(".toggle").attr('class', 'toggle normal');
-                d3.select("#dynamicSentence").html("In " + item.Country + ", <span class='electric'>" + item.RuralElec + "%</span> of the rural population has access to electricity. Women are expected to receive <span class='femaleExpected'>" + item.FemaleExpect2016 + " years </span> of schooling however, will only receive an average of <span class='femaleMean'>" + item.FemaleMean2016 + " years</span>." + " This is <span class='diffMean'>" + item.DiffMean + " years</span> less than men.");
+                d3.select("#dynamicSentence").html( () => {
+                    if (item.DiffMean >=0) {
+                        return "In " + item.Country + ", <span class='electric'>" + item.RuralElec + "%</span> of the rural population has access to electricity. Women are expected to receive <span class='femaleExpected'>" + item.FemaleExpect2016 + " years </span> of schooling however, will only receive an average of <span class='femaleMean'>" + item.FemaleMean2016 + " years</span>." + " This is <span class='diffMean'>" + item.DiffMean + " years less</span> than men."
+                    } else { 
+                        return "In " + item.Country + ", <span class='electric'>" + item.RuralElec + "%</span> of the rural population has access to electricity. Women are expected to receive <span class='femaleExpected'>" + item.FemaleExpect2016 + " years </span> of schooling however, will only receive an average of <span class='femaleMean'>" + item.FemaleMean2016 + " years</span>." + " This is <span class='diffMean'>" + item.DiffMean*-1 + " years more</span> than men."
+                    }
+                });
                 d3.select("#subtitle").html("");
             })
             .on('mouseout', () => {

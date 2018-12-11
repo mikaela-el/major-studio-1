@@ -304,22 +304,22 @@ p {
 }
 .electric {
     color:red;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     font-weight: 500;
 }
 .femaleExpected {
     color:#FF8C00;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     font-weight: 600;
 }
 .femaleMean {
     color:#FF8C00;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
         font-weight: 600;
 }
 .diffMean {
     color:black;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     font-weight: 500;
 }
 h3 {
