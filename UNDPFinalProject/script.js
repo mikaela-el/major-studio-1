@@ -307,24 +307,6 @@ let svg = (items) => {
           .style("stroke-dasharray","5,5")
           .style("stroke", 'aaaaaa');
 
-// // style the text for the sentence 
-//     sentenceOne.attr('x', 400)
-//         .attr('y', (items, i) => { return 575 + 400*i; })
-//         .attr("text-anchor", "middle")
-//         .style("font-size", "15px") 
-//         .style('fill', 'black')
-//         .text((d,i) => { return "In" + " " + (items[i].Country) + "," +  " " + (items[i].RuralElec) 
-//         + "% of the rural population has access to electricity."; });
-        
-// // style the text for the sentence 
-//     sentenceTwo.attr('x', 400)
-//         .attr('y', (items, i) => { return 625 + 400*i; })
-//         .attr("text-anchor", "middle")
-//         .style("font-size", "15px") 
-//         .style('fill', 'black')
-//         .text((d,i) => { return "Women are expected to receive" + " " + (items[i].FemaleExpect) 
-//         + " " + "years of schooling however, will only receive an average of" + " " + (items[i].FemaleMean2016) + " " + "years."; });
-
 // Countries to list for Country div   
    items.forEach( (item, i) => {
        
@@ -582,27 +564,6 @@ let svg = (items) => {
                         return 'toggle hidden'
                     }
                 });
-                
-            // countrySVG.append("line")    // Center Line 
-            //   .attr("x1", 400)
-            //   .attr("x2", 400)
-            //   .attr("y1", () => {
-            //         if (item.Female.Expect[m].year == '2016') {
-            //             return 17*(7-m)-20
-            //         } else {
-            //             return 30+(14*(7-m)+3)-20
-            //         }
-            //     })
-            //   .attr("y2", () => {
-            //         if (item.Female.Expect[m].year == '2016') {
-            //             return 17*(7-m)+20
-            //         } else {
-            //             return 30+(14*(7-m)+3)+20
-            //         }
-            //     })
-            //   .style("stroke", 'E2E1E0');
-                
-                
         }
     });
 
@@ -668,11 +629,5 @@ let svg = (items) => {
     mydiv.find('#sources').appendTo(mydiv)
 
 }
-
-
-
-
-// .attr('x', 10)
-// .attr('y', (items, i) => { return 10 + 13*i; })
 
 
