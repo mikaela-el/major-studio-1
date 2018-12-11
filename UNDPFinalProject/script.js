@@ -3,7 +3,7 @@ const data = d3.json("undpdata4.json");
 
     
 data.then( items => {
-                console.log(items);
+                // console.log(items);
                 let newStructure = items.map((orig) => {
                     let countryObject = {};
                     // reassigning: left is desired result, right is original structure
@@ -159,14 +159,14 @@ data.then( items => {
                     return countryObject;
                 })
                 
-                console.log(newStructure)
+                // console.log(newStructure)
                 
                 svg(newStructure);
             });
             
 let svg = (items) => {
     
-    console.log("FemaleExpect",items)
+    // console.log("FemaleExpect",items)
 
     function sortByKey(array, key) {
         return array.sort(function(a, b) {
@@ -178,9 +178,9 @@ let svg = (items) => {
     items = sortByKey(items, 'RuralElec');
     items = sortByKey(items, 'Region');
 
-	console.log(typeof items[0].FemaleMean);
-	console.log(typeof items[0].MaleMean);
-	console.log(typeof items[0].Country);
+// 	console.log(typeof items[0].FemaleMean);
+// 	console.log(typeof items[0].MaleMean);
+// 	console.log(typeof items[0].Country);
 	
 // globals
         let margin = 10;
@@ -327,7 +327,7 @@ let svg = (items) => {
             .attr('width', 800)
             .attr('height', 200)
             .on('mouseover', () => {
-                console.log('hi')
+                // console.log('hi')
                 d3.selectAll(".toggle").attr('class', 'toggle normal');
                 d3.select("#dynamicSentence").html( () => {
                     if (item.DiffMean >=0) {
@@ -339,7 +339,7 @@ let svg = (items) => {
                 d3.select("#subtitle").html("");
             })
             .on('mouseout', () => {
-                console.log('bye')
+                // console.log('bye')
                 d3.selectAll(".toggle").attr('class', 'toggle hidden');
             });
             
@@ -593,7 +593,7 @@ let svg = (items) => {
                 let display_label = '<a href="#' + d.Country + '">' + d.RuralElec + "%" +  '     ' + d.Country + '</a>';
                 
                 if (d.Region != region) { 
-                    console.log(d.Region)
+                    // console.log(d.Region)
                     //d3.append('h3 Country.Region')
                     region = d.Region
                     //entry.append('h3')
