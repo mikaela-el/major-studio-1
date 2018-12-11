@@ -10,18 +10,18 @@
 
 #### Sources 
 
-##### "Access to electricity (% of rural population with access)". World Bank, Sustainable Energy for All (SE4ALL) Database from The World Bank Data Catalog. [Link to source.](https://datacatalog.worldbank.org/dataset/sustainable-energy-all)
+##### "Access to electricity (% of rural population with access)". World Bank, Sustainable Energy for All (SE4ALL) Database from The World Bank Data Catalog. 
 
-##### "Burning Opportunity: Clean Household Energy for Health, Sustainable Development, and Wellbeing of Women and Children". World Health Organization (2016). [Link to source.](http://apps.who.int/iris/bitstream/handle/10665/204717/9789241565233_eng.pdf?sequence=1)
+##### "Burning Opportunity: Clean Household Energy for Health, Sustainable Development, and Wellbeing of Women and Children". World Health Organization (2016).
 
-##### Winther, Tanja, Margaret N. Matinga, Kirsten Ulsrud, and Karina Standal. "Women's Empowerment through Electricity Access: Scoping Study and Proposal for a Framework of Analysis."Journal of Development Effectiveness 9, no. 3 (2017): 389-417. doi:10.1080/19439342.2017.1343368. [Link to source.](https://doi.org/10.1080/19439342.2017.1343368)
+##### Winther, Tanja, Margaret N. Matinga, Kirsten Ulsrud, and Karina Standal. "Women's Empowerment through Electricity Access: Scoping Study and Proposal for a Framework of Analysis."Journal of Development Effectiveness 9, no. 3 (2017): 389-417. doi:10.1080/19439342.2017.1343368.
 
-##### "Gender Inequalities in Rural Employment in Ghana: An Overview". Gender, Equity and Rural Employment Division of FAO (2012). [Link to source.](http://www.fao.org/3/a-ap090e.pdf)
+##### "Gender Inequalities in Rural Employment in Ghana: An Overview". Gender, Equity and Rural Employment Division of FAO (2012). 
 
-##### "Mean years of schooling, female (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). [Link to source.](http://hdr.undp.org/en/data)
+##### "Mean years of schooling, female (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). 
 
-##### "Mean years of schooling, male (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). [Link to source.](http://hdr.undp.org/en/data)
+##### "Mean years of schooling, male (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). 
 
-##### "Expected years of schooling, male (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). [Link to source.](http://hdr.undp.org/en/data)
+##### "Expected years of schooling, male (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). 
 
-##### "Expected years of schooling, female (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). [Link to source.](http://hdr.undp.org/en/data)
+##### "Expected years of schooling, female (years)" United Nations Development Programme, Human Development Reports, Human Development Data (1990-2017). 
